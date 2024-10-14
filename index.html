@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자기소개</title>
+</head>
+<style>
+    @font-face {
+	font-family: DEFAULT_FONT;
+	src: url("NanumPen.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: LOGO_FONT;
+	src: url("RiaSans-ExtraBold.ttf") format("truetype");
+}
+
+@keyframes roate_360 {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+img#me {
+        animation-name: roate_360;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+
+
+*{
+    font-family: DEFAULT_FONT;
+    font-size: 22px;
+}
+h2{
+    font-family: LOGO_FONT;
+}
+
+li span{
+    text-decoration: underline;
+}
+
+strong{
+	font-weight : bold;
+	color : red;
+}
+body {
+    background-color: #f5f5f5;
+    color: #2f2f2f;
+    font-size: 16px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+video{
+    text-align: center;
+}
+#head{
+    text-align: left;
+}
+#center{
+    text-align: left;
+}
+
+#myname{
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 4px;
+}
+</style>
+<body>
+    <section id="head">
+        <h2>나를 소개합니다</h2>
+        <br> 
+        <ul>
+            <li>경성대학교 소프트웨어학과 21학번 이재협</li>
+            <li>목표는 개발자</li>
+            <li>아직 나는 젊다</li>
+            <li> <span> 좌우명:No Pain, No Gain</span></li>
+        </ul>
+    
+    </section>
+
+    <section id="center">
+        <h2>나의 목표</h2>
+        <p>
+         나는 미래에 프로그래머를 꿈꾸고있다.<br>
+         2학년 2학기를 마치고 3학년에 들어서 자격증을 하나씩 취득할 것이다.<br>         
+         기사 자격증, 컴활 자격증 등등 여러 자격증을 취득할 것이다.<br>   
+         그 후 내가 원하는 직장 <strong>네이버</strong>,<strong>카카오</strong>에 인턴체험을 한다.<br>
+         미리 자소서도 쓰는 연습을 한다.<br>
+         만약 내가 원하는 직장에 취업을 했다면, 만약 그렇지 못하더라도<br>
+         나는 더 하고 싶었던 게임프로그래머를 꿈꾸며 공부하고 게임회사를 차릴 것이다.<br>
+        </p>   
+    </section>
+
+</section>
+
+<section id="center">
+    <h2>나의 소개영상</h2>
+    <video src="영상.mp4" loop controls width="80%"></video>  
+</section>
+
+    <section id="foot">
+        <ul>
+            <li>
+                <img src="ico_mobile.png" alt=""><a href="tel:010-4680-3227">010-4680-3227</a>
+            </li>
+            <li>
+                <img src="ico_instagram.jpg" alt="" width="20" height="20"><a href="https://www.instagram.com/xaehub/" target="_blank">@myinstagram</a>
+            </li>
+            <li>
+                <img src="ico_facebook.png" alt=""><a href="https://facebook.com/myfacebook" target="_blank">@myfacebook</a>
+            </li>
+            <li>
+                <img src="ico_blog.png" alt=""><a href="https://section.blog.naver.com/ThisMonthDirectory.naver" target="_blank">@myblog</a>
+                </li>
+        </ul>  
+    </section>
+</body>
+</html>
